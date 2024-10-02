@@ -8,7 +8,7 @@ const IntervalForm = () => {
     e.preventDefault();
 
     axios
-      .post('http://localhost:4000/set-interval', { interval })
+      .post('http://localhost:5000/set-interval', { interval })
       .then((response) => {
         alert(response.data);
       })
